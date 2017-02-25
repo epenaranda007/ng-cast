@@ -10,5 +10,7 @@ angular.module('video-player')
 .controller('AppController', function($scope) {
   $scope.current = window.exampleVideoData[0];
   $scope.videos = window.exampleVideoData;
-  $scope.onClick = function() {};
+  $scope.onClick = function(vid) {
+    $scope.current = vid;
+  };
 });

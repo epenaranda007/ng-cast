@@ -3,21 +3,8 @@
   
   <video-list-entry ng-repeat="video in ctrl.videos" 
     video="video" 
+    on-click="ctrl.onClick"
   >
-    <!-- 
-
-    title="{{ video.snippet.title }}" 
-    description="{{ video.snippet.description }}"
-    thumbnail="{{ video.snippet.thumbnails.default.url }}"
-
--->
-    
   </video-list-entry>
 
-  <!-- <video-list-entry><h5><em>videoListEntry</em> component goes here</h5></video-list-entry>
-  <video-list-entry><h5><em>videoListEntry</em> component goes here</h5></video-list-entry>
-  <video-list-entry><h5><em>videoListEntry</em> component goes here</h5></video-list-entry>
-  <video-list-entry><h5><em>videoListEntry</em> component goes here</h5></video-list-entry>
-  <video-list-entry><h5><em>videoListEntry</em> component goes here</h5></video-list-entry>
-  <video-list-entry><h5><em>videoListEntry</em> component goes here</h5></video-list-entry> -->
 </ul>
