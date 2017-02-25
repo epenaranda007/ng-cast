@@ -11,5 +11,4 @@ angular.module('video-player')
   $scope.current = window.exampleVideoData[0];
   $scope.videos = window.exampleVideoData;
   $scope.onClick = function() {};
-  $scope.baseURL = 'https://www.youtube.com/embed/';
 });

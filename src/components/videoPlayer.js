@@ -4,14 +4,19 @@ angular.module('video-player')
   return {
 
     scope: {
-      current: '<',
-      url: '<'
+      video: '<',
     },
     controllerAs: 'ctrl',
     bindToController: true,
     controller: function($scope) {
-      console.log($scope);
+      // console.log($scope);
     },
     templateUrl: 'src/templates/videoPlayer.html'
+  };
+})
+
+.filter('youtubeEmbedUrl', function($sce) {
+  return function(videoId) {
+    return $sce.trustAsResourceUrl('https://www.youtube.com/embed/' + videoId);
   };
 });
