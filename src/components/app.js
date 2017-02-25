@@ -7,7 +7,8 @@ angular.module('video-player')
   };
 })
 
-.controller('VideoController', function($scope) {
-  $scope.videoList = window.exampleVideoData;
+.controller('AppController', function($scope) {
+  $scope.videos = window.exampleVideoData;
+  $scope.onClick = function() {};
   $scope.currentVideo = window.exampleVideoData[0];
 });
