@@ -2,12 +2,15 @@
 
   
   <video-list-entry ng-repeat="video in ctrl.videos" 
+    video="video" 
+  >
+    <!-- 
+
     title="{{ video.snippet.title }}" 
     description="{{ video.snippet.description }}"
     thumbnail="{{ video.snippet.thumbnails.default.url }}"
 
-  >
-    <!-- video="ctrl.video" -->
+-->
     
   </video-list-entry>
 
