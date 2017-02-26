@@ -13,10 +13,10 @@ angular.module('video-player')
     this.currentVideo = video;
   }.bind(this);
 
-  this.onClick = function(vid) {
-    this.currentVideo = vid;
-  };
-  
+  this.searchVideo = function(query) {
+    this.searchService.search(query, this.searchResults);
+  }.bind(this);
+
   this.searchService.search('cars', this.searchResults);
 })
 
